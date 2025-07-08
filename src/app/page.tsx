@@ -1,5 +1,8 @@
 'use client';
 
+import Link from "next/link";
+
+
 export default function Home() {
   return (
     <>
@@ -11,7 +14,7 @@ export default function Home() {
             <a href="/" className="text-gray-700 hover:text-orange-600 font-medium">Home</a>
             <a href="/how-it-works" className="text-gray-700 hover:text-orange-600 font-medium">How It Works</a>
             <a href="/campaigns" className="text-gray-700 hover:text-orange-600 font-medium">Campaigns</a>
-            <a href="/start" className="text-white bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-full font-medium">➕ Start a Campaign</a>
+            <Link href="/start" className="text-white bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-full font-medium">➕ Start a Campaign</Link>
           </div>
         </div>
       </nav>
